@@ -1,0 +1,41 @@
+1、安装mysql
+sudo apt-get install mysql-server isntall mysql-client libmysqlclient-dev
+//安装时会提示设置密码，要记住
+
+2、创建数据库
+create database [数据库名称];
+//mysql的每条语句都需要加分号
+
+3、登入mysql
+mysql -D [库名] -u [用户名] -p
+Enter passwd:[安装时设置的密码]
+
+4、查看有那些数据库
+show databases
+
+5、切换到数据库
+use [库名]
+
+6、创建一张表
+create table [表名] ([字段][类型][Null][键值][默认][额外],)
+
+7、查看当前数据库的表
+describe [表名]
+
+8、查看当前表中的详细信息
+select * from [表名]
+
+9、修改数据表
+alter table [表名]
+change column [字段] [字段] [类型]  //修改字段的名称和类型
+add column [字段] [类型]             //增加一个新的字段
+
+10、展示数据库表
+show tables                         //展示当前数据库下的表
+show tables from [库名]           //展示来自xxx数据库的表
+
+11、插入数据
+insert into [表名] ([字段1],[字段2],[字段3]...)
+values([值1],[值2],[值3]...)
+
+12、
